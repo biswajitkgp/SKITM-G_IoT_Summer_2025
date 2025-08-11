@@ -33,11 +33,10 @@ Before building the physical circuit, we used the Wokwi online simulator to desi
 
 This was our first hands-on step. We prepared our ESP32 development boards by flashing them with the MicroPython firmware, making them ready for our own code.
 
-**A detailed guide for this process is located in `3_ESP32_Setup_and_Firmware/Flashing_Guide.md`**.
+**Detailed guides for the processes is located in `3_ESP32_Setup_and_Firmware/Tutorials.txt`**.
 
-The guide covers:
-1.  How to check which USB-to-Serial chip your board has (CP2102 vs. CH340).
-2.  Where to download and install the correct drivers.
+The guides cover:
+1.  Downloading and installing the USB to UART drivers.
 3.  A step-by-step walkthrough of flashing MicroPython using the Thonny IDE.
 
 ### 🛠️ Phase 4: Designing a Custom PCB (EasyEDA)
