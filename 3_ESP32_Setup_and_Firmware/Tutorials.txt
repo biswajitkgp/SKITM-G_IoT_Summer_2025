@@ -1,0 +1,8 @@
+1. Install USB Drivers
+	a) https://randomnerdtutorials.com/install-esp32-esp8266-usb-drivers-cp210x-windows/
+	OR
+	b) https://thelinuxcode.com/install-esp32-ch340-serial-driver/
+
+
+2. Install Thonny IDE
+	https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/
