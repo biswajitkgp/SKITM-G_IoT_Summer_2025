@@ -4,77 +4,66 @@ Welcome to the resource repository for the IoT Product Design Workshop held at t
 
 
 
-## 📋 Table of Contents
+## 📋 The Project Workflow
 
-1.  [Project Overview](#-project-overview)
-2.  [The Workflow](#-the-workflow)
-    * [Step 1: Simulation in WokWi](#-step-1-simulation-in-wokwi)
-    * [Step 2: Hardware & PCB Design in EasyEDA](#-step-2-hardware--pcb-design-in-easyeda)
-    * [Step 3: Firmware Development with MicroPython](#-step-3-firmware-development-with-micropython)
-3.  [Repository Structure](#-repository-structure)
-4.  [Essential Resources](#-essential-resources)
-5.  [Acknowledgements](#-acknowledgements)
+This repository is organized to follow the exact path we took during the project. Each numbered folder marks a key stage in our journey from an idea to a finished product.
 
----
-
-## 🎯 Project Overview
-
-This project is a hands-on introduction to designing a complete IoT product. The goal was to build a simple **AI Powered IoT Environmental Monitor** using an **ESP32** microcontroller. It demonstrates the full lifecycle of product development: from digital simulation to a physical, custom-designed PCB with real-world firmware.
-
-**Key Features:**
-* Reads sensor data (e.g., temperature, humidity).
-* Programmed using **MicroPython**, an easy-to-learn Python implementation for microcontrollers.
-* Custom-designed PCB for a clean and robust final product.
+1.  [Phase 1: Introduction to Hardware for IoT](#-phase-1-introduction-to-hardware-for-iot)
+2.  [Phase 2: Simulation & Code Prototyping (Wokwi)](#-phase-2-simulation--code-prototyping-wokwi)
+3.  [Phase 3: Setting Up Your ESP32 Board](#-phase-3-setting-up-your-esp32-board)
+4.  [Phase 4: Designing a Custom PCB (EasyEDA)](#-phase-4-designing-a-custom-pcb-easyeda)
+5.  [Phase 5: The Final Project Code](#-phase-5-the-final-project-code)
 
 ---
 
-## 🚀 The Workflow
+### 🚀 Phase 1: Introduction to Hardware for IoT
 
-We followed a 3-step process to take our idea from concept to reality.
+We started with a presentation covering the fundamentals of designing hardware for the Internet of Things. This session provided the core concepts for our entire project.
 
-### 🔌 Step 1: Simulation in WokWi
+* **Find the full presentation in:** `1_Presentation_Hardware_For_IoT/`
 
-Before touching any physical hardware, we simulated the entire circuit and tested our initial code using the WokWi online simulator. This is a crucial step to validate the design and logic.
+### 🔌 Phase 2: Simulation & Code Prototyping (Wokwi)
 
-* **Find the simulation files in:** `1_Simulation_Wokwi/`
+Before building the physical circuit, we used the Wokwi online simulator to design and test everything. This is where we wrote our first version of the MicroPython code and made sure our schematic worked as expected.
+
+* **Find all simulation files in:** `2_Simulation_Wokwi/`
 * **Or view the live project on Wokwi:** `[Link to your public Wokwi project]`
 
-### 🛠️ Step 2: Hardware & PCB Design in EasyEDA
+### 💻 Phase 3: Setting Up Your ESP32 Board
 
-Once the simulation was successful, we designed a custom Printed Circuit Board (PCB) to house our components. This gives the project a professional and permanent form factor.
+This was our first hands-on step. We prepared our ESP32 development boards by flashing them with the MicroPython firmware, making them ready for our own code.
 
-* **PCB project files are in:** `2_Hardware_EasyEDA/project_files/`
-* **Gerber files for manufacturing are in:** `2_Hardware_EasyEDA/gerbers/`
+**A detailed guide for this process is located in `3_ESP32_Setup_and_Firmware/Flashing_Guide.md`**.
 
-### 💻 Step 3: Firmware Development with MicroPython
+The guide covers:
+1.  How to check which USB-to-Serial chip your board has (CP2102 vs. CH340).
+2.  Where to download and install the correct drivers.
+3.  A step-by-step walkthrough of flashing MicroPython using the Thonny IDE.
 
-With the physical hardware ready, the final step is to flash the ESP32 with the MicroPython firmware and upload our application script.
+### 🛠️ Phase 4: Designing a Custom PCB (EasyEDA)
 
-1.  **Flash MicroPython Firmware:** If your ESP32 is new, you first need to install the base MicroPython firmware. You can find instructions [here](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html).
-2.  **Upload the Project Code:** Use a tool like Thonny IDE to upload the `main.py` and `boot.py` files from the `3_Firmware_Micropython/` directory to your ESP32.
+With a working prototype, we moved to EasyEDA to design a professional Printed Circuit Board (PCB) for our project. This is how we created a permanent and reliable home for our components.
 
----
+All the design files are here for you to use:
+* **EasyEDA project files are in:** `4_Hardware_Design_EasyEDA/project_files/`
+* **Gerber files (for manufacturing) are in:** `4_Hardware_Design_EasyEDA/gerbers/`
 
-## 📂 Repository Structure
+### ✅ Phase 5: The Final Project Code
 
-* `1_Simulation_Wokwi/`: Contains `wokwi.toml` and `diagram.json` for the online simulation.
-* `2_Hardware_EasyEDA/`: Contains schematic, PCB, and Gerber files.
-* `3_Firmware_Micropython/`: Contains the MicroPython source code (`main.py`).
-* `4_Resources/`: Contains the workshop presentation, component datasheets, and other useful links.
+This is the final version of the MicroPython code, written specifically to run on the custom PCB we designed.
+
+* **Find the final source code in:** `5_Final_Project_Code/`
 
 ---
 
 ## 📚 Essential Resources
 
-* **Workshop Presentation:** The complete presentation can be found in `4_Resources/presentation/`.
-* **Datasheets:** Key component datasheets are located in `4_Resources/datasheets/`.
-* **Useful Links:** A list of online calculators (like the Digikey resistor calculator), component suppliers, and other helpful sites is available in `4_Resources/useful_links.md`.
-
----
+* **Component Datasheets:** Key datasheets are located in `6_Resources/datasheets/`.
+* **Useful Links:** A list of online calculators, component suppliers, and other helpful sites is available in `6_Resources/useful_links.md`.
 
 ## 🙏 Acknowledgements
 
-A special thank you to the **SKITM&G, Jaipur**, for hosting this workshop and supporting the next generation of IoT engineers.
+A special thank you to **SKITM&G, Jaipur**, for an excellent internship program and the opportunity to work on this project.
 
 ---
 
