@@ -2,7 +2,7 @@
 
 Welcome to the resource repository for the IoT Product Design Workshop held at the **Center of Excellence in IoT, SKITM&G, Jaipur**. This repository contains all the necessary files, code, and guides to build the IoT project from scratch.
 
-
+![Photo of the final assembled PCB](docs/images/final-pcb.jpg)
 
 ## 📋 The Project Workflow
 
